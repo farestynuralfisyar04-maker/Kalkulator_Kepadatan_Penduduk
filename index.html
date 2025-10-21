@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kepadatan Penduduk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kalkulator Kepadatan Penduduk</h1>
+        <p>Hitung kepadatan penduduk (KP) dengan membagi jumlah penduduk (Pt) dengan luas wilayah (Lt).</p>
+
+        <div class="input-group">
+            <label for="penduduk">Jumlah Penduduk (Jiwa):</label>
+            <input type="number" id="penduduk" min="0" placeholder="Masukkan jumlah penduduk" required>
+        </div>
+
+        <div class="input-group">
+            <label for="luas">Luas Wilayah (km²):</label>
+            <input type="number" id="luas" min="0.01" step="any" placeholder="Masukkan luas wilayah (misal: 123.45)" required>
+        </div>
+
+        <button onclick="hitungKepadatan()">Hitung Kepadatan</button>
+
+        <div class="result-box">
+            <h2>Hasil Kepadatan</h2>
+            <p id="hasil">Masukkan data di atas untuk memulai perhitungan.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
